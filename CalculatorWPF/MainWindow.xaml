@@ -1,0 +1,114 @@
+﻿<Window x:Class="CalculatorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="result" Grid.Row="0" Grid.ColumnSpan="5" Background="LightYellow" Foreground="Black" FontSize="50"  TextAlignment="Right" RenderTransformOrigin="0.5,0.5">
+            0
+        </TextBox>
+
+        <Border  Grid.Row="2"  Grid.Column="5" Margin="2">
+            <Button  Name="faiz" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click" >%</Button>
+        </Border>
+
+        <Border  Grid.Row="1"  Grid.Column="5" Margin="2">
+            <Button  Name="C" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click" >C</Button>
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="4" Margin="2">
+            <Button Name="backspace" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">⌫</Button>
+        </Border>
+
+        <Border Grid.Row="3"  Margin="2" >
+            <Button Name="one" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">1</Button>
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="5" Margin="2">
+            <Button Name="kv" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">x²</Button>
+        </Border>
+        
+        <Border Grid.Row="2"  Margin="2" >
+            <Button Name="four" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">4</Button>
+        </Border>
+        
+        <Border  Grid.Row="1"  Margin="2" >
+            <Button  Name="seven" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click" >7</Button>
+        </Border>
+        
+       
+
+        <Border Grid.Row="1"  Grid.Column="1"  Margin="2">
+            <Button Name="eight" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">8</Button>
+        </Border>
+        
+        <Border Grid.Row="1" Grid.Column="2" Margin="2">
+            <Button Name="nine" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">9</Button>
+        </Border>
+       
+        <Border Grid.Row="2" Grid.Column="1" Margin="2" >
+            <Button Name="five" Grid.Row="1" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">5</Button>
+        </Border>
+        
+        <Border Grid.Row="1" Grid.Column="3" Margin="2">
+            <Button Name="divide" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">/</Button>
+        </Border>
+        
+        <Border Grid.Row="2" Grid.Column="3" Margin="2">
+            <Button Name="multi" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">*</Button>
+        </Border>
+        
+        <Border Grid.Row="2" Grid.Column="2" Margin="2">
+            <Button Name="six" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">6</Button>
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="1"  Margin="2">
+            <Button Name="zero" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">0</Button>
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="1" Margin="2">
+            <Button Name="two" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">2</Button>
+        </Border>
+        
+        <Border Grid.Row="3" Grid.Column="2" Margin="2">
+            <Button Name="three" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">3</Button>
+        </Border>
+        
+        <Border Grid.Row="3" Grid.Column="3" Margin="2">
+            <Button Name="sum" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">+</Button>
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="0"  Margin="2">
+            <Button Name="point" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">,</Button>
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="3" Margin="2">
+            <Button Name="minus" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">-</Button>
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="2"  Margin="2">
+            <Button Name="equal" Grid.Row="2" FontSize="28" FontWeight="Bold" Margin="15" Click="Click">=</Button>
+        </Border>
+        
+        <Button Grid.Column="3" Content="Button" HorizontalAlignment="Left" Margin="361,0,0,0" Grid.Row="7" VerticalAlignment="Center" Width="0"/>
+
+    </Grid>
+</Window>
